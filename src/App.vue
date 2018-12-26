@@ -9,7 +9,16 @@
         <div class="row">
 
           <grid-vue tamanho="4">
-            Menu
+            <card-menu-vue>
+              <img src="" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Maria</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </card-menu-vue>
+            <card-menu-vue>
+              <h3> Teste menu </h3>
+            </card-menu-vue>
           </grid-vue>
 
           <grid-vue tamanho="8">
@@ -30,13 +39,15 @@
 import NavBarVue from '@/components/layouts/NavBarVue'
 import FooterVue from '@/components/layouts/FooterVue'
 import GridVue from '@/components/layouts/GridVue'
+import CardMenuVue from '@/components/layouts/CardMenuVue'
 
 export default {
   name: 'App',
   components:{
     NavBarVue,
     FooterVue,
-    GridVue
+    GridVue,
+    CardMenuVue
   }
 }
 </script>
